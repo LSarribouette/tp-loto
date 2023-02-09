@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href={{ asset('media/logo-whale-money.png') }}>
+        <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
+        {% block cssbonus %}{% endblock %}
+        <title>{% block title %}Loto{% endblock %}</title>
+    </head>
+    <body>
+    <header>
+        {% include("inc/nav.html.twig") %}
+    </header>
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+    <footer>
+        {% include("inc/nav.html.twig") %}
+    </footer>
+    </body>
+</html>

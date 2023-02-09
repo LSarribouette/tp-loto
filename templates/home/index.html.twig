@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Accueil{% endblock %}
+
+{% block body %}
+    <div class="presentation">
+        <p id="welcome">Bienvenue à toi
+        {% if app.user %}
+            <span><strong>{{ app.user.username }}</strong></span>
+        {% endif %}
+        </p>
+        <h1>Super loto</h1>
+        <section>
+            <img src="{{ asset('media/logo-whale-money.png') }}" alt="Un beau logo de balein qui expulse de l'argent." width="300px" class="logo">
+            <article>Joue à ce nouveau super loto avec nous !</article>
+        </section>
+    </div>
+{% endblock %}
