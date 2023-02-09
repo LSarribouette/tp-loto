@@ -1,6 +1,10 @@
 <nav>
     <a href="{{ path('home_index') }}">Accueil</a>
     <a href="">Jouer</a>
-    <a href="">S'enregistrer</a>
-    <a href="">Se connecter</a>
+    {% if app.user %}
+        <a href="{{ path('app_logout') }}">Se déconnecter</a>
+    {% else %}
+        <a href="{{ path('app_register') }}">S'enregistrer</a>
+        <a href="{{ path('app_login') }}">Se connecter</a>
+    {% endif %}
 </nav>

@@ -27,8 +27,19 @@ footer {
 main {
     padding : 0 15%;
 }
-
-.presentation, nav {
+nav {
+    text-align: center;
+}
+    a {
+        color: white;
+        text-decoration: none;
+    }
+        a:hover {
+            background-color: white;
+            color: #2599C2;
+            padding: 0.5%;
+        }
+.presentation {
     text-align: center;
 }
 
