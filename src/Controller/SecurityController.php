@@ -15,6 +15,9 @@ class SecurityController extends AbstractController
         // if ($this->getUser()) {
         //     return $this->redirectToRoute('target_path');
         // }
+        if ($this->getUser() == null) {
+            $this->addFlash("not-connected","Connecte-toi pour jouer !");
+        }
 
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();

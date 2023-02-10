@@ -40,7 +40,7 @@ class Ticket
 
     #[ORM\ManyToOne(inversedBy: 'tickets')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?user $player = null;
+    private ?User $player = null;
 
     public function getId(): ?int
     {

@@ -3,5 +3,11 @@
 {% block title %}{{ parent() }} - Jeu{% endblock %}
 
 {% block body %}
-
+    <div class="play-ticket">
+        {{ form_start(ticketForm) }}
+        {{ form_widget(ticketForm) }}
+        <button>Jouer</button>
+        {{ form_end(ticketForm) }}
+    </div>
 {% endblock %}
+
